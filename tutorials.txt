@@ -1,0 +1,26 @@
+git init 
+	this initializes a  repo.
+	now dont create readme and other stuff while creating a repo, what you have to do is simply create a repo and then add remote to your local machine.
+	
+git remote add origin <url to the repo you created>
+	this will point to the github repository which is specified in the url and that will now be refered to as origin
+
+git branch -M main
+	this will rename the branch to main. usually done to avoid the name master which is no longer used in github. In github main is the master branch
+
+git checkout -b test
+	this will create a new branch test on your local machine. This has no impact on remote.
+
+git checkout main
+	this will move you back to main branch. It is interesting if you make changes in test branch's file and navigate back to main you will see those changes are not present in main on you local mahcine.
+
+git merge test
+	after commiting changes to test. if you run this command on main branch, then changes from test will be merged to main.
+
+	
+	
+future:
+https://gist.github.com/brandon1024/14b5f9fcfd982658d01811ee3045ff1e
+
+under the hood:
+https://www.freecodecamp.org/news/git-under-the-hood/
